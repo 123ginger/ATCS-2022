@@ -1,0 +1,7 @@
+.image1 img {
+    float: left;
+    width: 60vh;
+    height: 40vh;
+    margin-top: 190px;
+    transform: rotate(270deg);
+}
