@@ -4,4 +4,9 @@
     height: 40vh;
     margin-top: 190px;
     transform: rotate(270deg);
+    margin-top: 150px;
+}
+
+.experience-text {
+    margin-top: 100px;
 }
