@@ -7,6 +7,25 @@
     margin-top: 150px;
 }
 
+body {
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
 .experience-text {
     margin-top: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.top-bar{
+    text-align: center;
+    border: solid black;
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top-bar a{
+    color: rgba(255, 255, 255, 0.813);
 }

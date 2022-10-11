@@ -1,0 +1,29 @@
+.top-header {
+    text-align: center;
+    border: solid black;
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menlo1 {
+    width: 400px; 
+    height: 250px;
+    float: left;
+}
+.menlo-caption {
+    float: left;
+    clear: left;
+}
+
+.tourney-1 {
+    width: 400px; 
+    height: 250px;
+    float: right;
+}
+.naptown-caption {
+    float: right;
+    clear: right;
+}
