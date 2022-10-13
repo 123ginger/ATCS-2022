@@ -21,7 +21,7 @@
     right: 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.right-text:hover {
+.right-text a:hover {
     text-decoration: underline;
     font-size: 20px;
 }
@@ -33,7 +33,7 @@
     left: 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.left-text:hover {
+.left-text a:hover {
     text-decoration: underline;
     font-size: 20px; 
 }
@@ -44,8 +44,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.top-text:hover {
+.top-text a:hover {
     text-decoration: underline;
     font-size: 20px;
-    
 }
