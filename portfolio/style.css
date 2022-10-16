@@ -1,50 +1,23 @@
-.front-photo img{
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    width: 75vh;
-    height: 75vh;
-    border: 30px rgba(211, 211, 211, 0.94) solid;
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 
 .links {
-    color: white;
-}
-
-
-.right-text {
-    text-align: right;
-    position: relative;
-    bottom: 290px;
-    right: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.right-text a:hover {
-    text-decoration: underline;
-    font-size: 20px;
-}
-
-/* Fix hover for left and right elements */
-.left-text {
-    position: relative;
-    bottom: 300px;
-    left: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.left-text a:hover {
-    text-decoration: underline;
-    font-size: 20px; 
-}
-
-
-.top-text {
-    text-align: center;
+    color: black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.top-text a:hover {
-    text-decoration: underline;
-    font-size: 20px;
+.inside-text {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.background-image {
+    background-image: url(frontimage.JPG);
+    background-size: 1430px 800px;
+    width: 1430px;
+    height: 800px;
 }
