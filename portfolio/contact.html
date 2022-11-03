@@ -16,7 +16,7 @@
 </head>
     <body>
 
-        <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+        <nav class="navbar sticky-top navbar-light navbar-expand-lg navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Bradford Tudor</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,13 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="experience.html">Experience <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
@@ -80,26 +80,29 @@
               </div>
         </div>
         
-        
-        <div class="text">
-            <br><br>Please feel free to reach out to me on any of these platforms.
-        </div>
 
-        <!-- credit: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ -->
-        <div class="message"> 
-            <form action="mailto:bradfordtudor@gmail.com"
-            method="POST"
-            enctype="multipart/form-data"
-            name="EmailForm">
-                Name:<br>
-                <input type="text" size="19" name="Contact-Name"><br><br>
-                Email:<br>
-                <input type="email" name="Contact-Email"><br><br> 
-                Message:<br> 
-                <textarea name="Contact-Message" rows="6″ cols="20″>
-                </textarea><br><br> 
-                <button type="submit" value="Submit">Send</button>
-            </form>  
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- credit: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ -->
+                <div class="message"> 
+                <form action="mailto:bradfordtudor@gmail.com"
+                method="POST"
+                enctype="multipart/form-data"
+                name="EmailForm">
+                <br><br>Name:<br>
+                    <input type="text" size="19" name="Contact-Name"><br><br>
+                    Email:<br>
+                    <input type="email" name="Contact-Email"><br><br> 
+                    Message:<br> 
+                    <textarea name="Contact-Message" rows="6″ cols="20″>
+                    </textarea><br><br> 
+                    <button type="submit" value="Submit">Send</button>
+                </form>  
         </div>
+              </div>
+            </div>
+        </div>
+        
     </body>
 </html>

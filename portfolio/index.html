@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Bradford Tudor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav active">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="experience.html">Experience <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
@@ -43,25 +43,27 @@
     
     <div class="container">
         <div class="jumbotron">
-			<h1>Bradford Tudor</h1>
+			<h1 class="text-center">Bradford Tudor</h1>
         </div>
     </div>
     
     <!-- Credit: https://www.youtube.com/watch?v=qEcXe51-ZTw -->
-    <div class="container">
-        <h1><span class="auto-type"></span></h1>
+    <div class="typedtext">
+        <div class="container">
+            <h1><span class="auto-type"></span></h1>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Athlete", "Student", "Brother", "High Schooler"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Athlete", "Student", "Brother", "High Schooler"],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        })
-    </script>
     <!-- Until Here -->
     
 
