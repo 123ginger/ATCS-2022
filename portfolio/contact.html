@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <link rel="stylesheet" type="text/css" href="contact.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Your Personal CSS BELOW this Line -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body style="background-color: grey">
-        <h1>Contact Information <br> Bradford Tudor</h1>
-        <table >
-            <tr>
-                <th class="phone-number">Phone Number</th>
-                <th class="school-email">School Email</th>
-                <th class="personal-email">Personal Email</th> 
-                <th class="adress">Adress</th> 
-            </tr>
-                <td class="phone">(650) 304-5133</td>
-                <td class="school-email">bradford.tudor@menloschool.org</td>
-                <td class="personal-email">bradfordtudor@gmail.com</td>  
-                <td class="address">531 Ravenscourt Road</td>
-            </tr>
-        </table>
-        <div class="text">
-            Please feel free to reach out to me on any of these platforms and emails to talk. I am always available and willing to speak with someone about my experience, passion, and dedication to lacrosse.
+  
+  <body>
+        <nav class="navbar sticky-top navbar-light navbar-expand-lg navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Bradford Tudor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav active">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="experience.html">Experience <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+              <div class="jumbotron">
+                  <h1 class="text-center">Contact Information</h1>
+              </div>
+
+        <div class="card-deck">
+            <div class="card">
+              <img src="img/phonenumber.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phone Number</h5>
+                <p class="card-text">(650) 304-5133</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/menlopic.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Menlo Email</h5>
+                <p class="card-text">bradford.tudor@menloschool.org</p>
+              </div>
+            </div>
         </div>
-        <div class="top-bar"> 
-            <a href="index.html">Homepage</a>
+
+        <br><br> 
+
+        <div class="card-deck">
+            <div class="card">
+              <img src="img/gmail.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Personal Email</h5>
+                <p class="card-text">bradfordtudor@gmail.com</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/house.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Address</h5>
+                <p class="card-text">531 Ravenscourt Road</p>
+              </div>
+            </div>
         </div>
-    </body>
+      </div>
+        
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- credit: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ -->
+                <div class="text-center"> 
+                <form action="mailto:bradfordtudor@gmail.com"
+                method="POST"
+                enctype="multipart/form-data"
+                name="EmailForm">
+                <br><br>Name:<br>
+                    <input type="text" size="19" name="Contact-Name"><br><br>
+                    Email:<br>
+                    <input type="email" name="Contact-Email"><br><br> 
+                    Message:<br> 
+                    <textarea name="Contact-Message" rows="6″ cols="20″>
+                    </textarea><br><br> 
+                    <button type="submit" value="Submit">Send</button>
+                </form>  
+              </div></div>
+            </div>
+        </div>
+         
+        <!-- allows the dropdown to work on all of my files: 
+             credit: https://www.w3schools.com/tags/att_script_integrity.asp
+        -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
