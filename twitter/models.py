@@ -98,7 +98,6 @@ class TweetTag(Base):
     tag_id = Column('tag_id', TEXT, ForeignKey('tags.id'))
     tweet_id = Column('tweet_id', TEXT, ForeignKey('tweets.id'))
     tweets = relationship("Tweet", back_populates="tweet_tags")
-
     tags2 = relationship("Tag", back_populates="tweet_tags2")
 
     def __init__(self, id, tag_id, tweet_id):
