@@ -45,7 +45,6 @@ class Follower(Base):
 
     def __init__(self, follower_id, following_id):
             # id auto-increments
-            self.id = id
             self.follower_id = follower_id
             self.following_id = following_id
 
@@ -63,13 +62,16 @@ class Tweet(Base):
 
     def __init__(self, content, timestamp, username):
             # id auto-increments
-            self.id = id
             self.content = content
             self.timestamp = timestamp
             self.username = username
     
     def __repr__(self):
-        return "@" + self.username + "\n" + self.content + "\n" + self.tags + "\n" + DATETIME
+        tag_string = ""
+        for tag in self.tags:
+             tag_string += str(tag)
+        return "\n@" + self.username + "\n" + self.content + "\n" + tag_string + "\n" + self.timestamp
+
         
 
 class Tag(Base):
@@ -83,11 +85,10 @@ class Tag(Base):
 
     def __init__(self, content):
             # id auto-increments
-            self.id = id
             self.content = content
     
     def __repr__(self):
-        return "# " + self.content
+        return self.content
     
 
 class TweetTag(Base):
@@ -100,7 +101,6 @@ class TweetTag(Base):
 
     def __init__(self, tag_id, tweet_id):
         # id auto-increments
-        self.id = id
         self.tag_id = tag_id
         self.tweet_id = tweet_id
     
